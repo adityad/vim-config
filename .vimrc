@@ -29,3 +29,9 @@ nmap <silent> ,ev :e $MYVIMRC<cr>
 " And to source this file as well (mnemonic for the key sequence is
 " 's'ource 'v'imrc)
 nmap <silent> ,sv :so $MYVIMRC<cr>
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+set incsearch
