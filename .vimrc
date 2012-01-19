@@ -32,6 +32,12 @@ nmap <silent> ,sv :so $MYVIMRC<cr>
 
 set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
 
 set incsearch
+set showmatch
+set ignorecase " Set search/replace pattern to ignore case 
+set smartcase " Set smartcase mode on, If there is upper case character in the search patern, the 'ignorecase' option will be override.
+
+au BufEnter,BufRead *.py setlocal smartindent cinwords=if,elif,else,for,while,try,except,finally,def,class
